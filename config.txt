@@ -1,6 +1,1 @@
-# configuration created on 2022-02-16_21:36
-VERSION=v1
-TAG=2023-10-06
-MYHUBID=mizuhirosuzuki
-MYIMG=projectname
-STATALIC="/Users/mizuhirosuzuki/Downloads/OneDrive_2023-10-06/Replication code/stata.lic"
+# configuration created on 2023-10-06_22:58
