@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # for debugging
-BUILDARGS="--progress plain --no-cache"
 
 
 # if we are on Github Actions
@@ -11,8 +10,9 @@ then
    TAG=latest
 else
    source init.config.txt
-   DOCKERIMG=$(echo $MYHUBID/$MYIMG | tr [A-Z] [a-z])
+   DOCKERIMG=$(echo $MYHUBID/$MYIMG | tr A-Z a-z)
 fi
+
 
 # Check that the configured STATALIC is actually a file
 if [[ ! -f $STATALIC ]] 
@@ -22,7 +22,6 @@ then
 fi
 
 DOCKER_BUILDKIT=1 docker build \
-  $BUILDARGS \
   . \
   --secret id=statalic,src=$STATALIC \
   -t ${DOCKERIMG}:$TAG

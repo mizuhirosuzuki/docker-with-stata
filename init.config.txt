@@ -1,13 +1,13 @@
-VERSION=17
+VERSION=v1
 # the TAG can be anything, but could be today's date
 TAG=$(date +%F) 
 # This should be your login on Docker Hub
-MYHUBID=larsvilhuber
+MYHUBID=Mizuhirosuzuki
 # This can be anything, but might be the current repository name
-MYIMG=projectname
+MYIMG=Projectname
 # Identify where your Stata license may be. This can be hard-coded, or can be a function.
 # Remember to quote any strings that have spaces
 # STATALIC="/home/user/Stata 17/STATA.LIC"
 # STATALIC="/usr/local/stata17/stata.lic"
-STATALIC="$(find $HOME/Dropbox/ -name stata.lic.$VERSION| tail -1)"
+STATALIC="/Users/mizuhirosuzuki/Downloads/OneDrive_2023-10-06/Replication code/stata.lic"
 

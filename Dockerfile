@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1.2
-ARG SRCVERSION=17
-ARG SRCTAG=2022-01-17
+ARG SRCVERSION=18
+ARG SRCTAG=2023-10-04
 ARG SRCHUBID=dataeditors
 
 FROM ${SRCHUBID}/stata${SRCVERSION}:${SRCTAG}
@@ -22,5 +22,5 @@ RUN --mount=type=secret,id=statalic \
 USER statauser
 VOLUME /project
 WORKDIR /project
-ENTRYPOINT ["stata-mp"]
+#ENTRYPOINT ["stata-mp"]
 
